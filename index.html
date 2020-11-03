@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		h2{margin:0; padding: 0;}
+		section{color: white; width: 800px; height: 300px; margin: auto; position: relative;}
+		.blue{background: hotpink;}
+		.red{background: green;}
+		.perspective{perspective: 100px; z-index: 10;}
+#coffin{width: 400px; position: absolute; left: 50px; top:5px; z-index: 3;
+animation: rr 3s infinite linear;}
+#pepe{width: 400px; position: absolute; left: 220px; top:150px; z-index: 4;
+animation: rr3d 3s infinite linear;}
+
+ @keyframes rr{ to{transform: rotate(360deg); } } 
+ @keyframes rr3d{ to{transform: rotate3d(0,1,0,360deg);} }
+
+	</style>
+</head>
+<body>
+<section class="red">
+	<h2>따 따라</h2></section>
+<section class="blue">
+	<h2>단단</h2></section>
+<section class="red perspective">
+	<h2>따 따라</h2> <img src="pepe.png" id="pepe"> <img src="coffin.png" id="coffin"></section>
+<section class="blue">
+	<h2>따라라라</h2></section>
+<section class="red">
+	<h2>다~ 따라라라라 다~ 따라라라라</h2>
+</section>
+</body>
+</html>
